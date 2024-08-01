@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-zinc-800 text-white flex justify-center items-center gap-10 py-4 text-zinc-500 text-2xl">
+      <a href="/">HOME</a>
+      <a href="/login">LOGIN</a>
+      <a href="/signup">SIGNUP</a>
+    </div>
+   <div class="h-screen w-screen bg-zinc-800 pt-20">
+<h1 class="text-9xl text-zinc-700 text-center">SIGNUP</h1>
+<form class="w-1/2 m-auto mt-20 flex flex-col items-center justify-center py-10" action="/users/login" method="post">
+<input class="bg-transparent border-2 border-zinc-500 rounded block mb-2 w-[20vw] p-2 text-white" type="text" name="username" placeholder="enter username">
+<input class="bg-transparent border-2 border-zinc-500 rounded block mb-2 w-[20vw] p-2 text-white" type="password" name="password" placeholder="enter password">
+<input class="bg-blue-500 rounded px-4 py-2 font-bold mt-10 hover:bg-blue-600" type="submit" value="LOGIN">
+</form>
+   </div>
+  </body>
+</html>
